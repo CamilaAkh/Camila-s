@@ -3,15 +3,15 @@ import java.util.Scanner;
 import java.util.Random;
 
 public class HomeWork6 {
-    public static class Lake {
-        public void toPlunge() {
+    public static class Lake { //создаем класс пруда
+        public void toPlunge() { //метод для купания в пруду
             System.out.println("Вы окунулись в пруду");
         }
     }
-    public static class Duck extends Lake {
-        protected boolean isItADrake;
-        public boolean isItHungry=true;
-        public void toFeed() {
+    public static class Duck extends Lake { //создается класс уток. наследник класса пруда
+        protected boolean isItADrake; //переменная, определяющая гендерную принадлежность утки
+        public boolean isItHungry=true; //переменная, определяющая голодность утки
+        public void toFeed() { //метод для кормления утки
             System.out.println("Утка покормлена");
             isItHungry=false;
         }
@@ -28,14 +28,14 @@ public class HomeWork6 {
             return (isItADrake);
         }
     }
-    public static class Fish extends Lake {
-        public void toCatch() {
+    public static class Fish extends Lake { //подкласс пруда - рыбы
+        public void toCatch() { //метод для рыбалки
             System.out.println("Рыбка поймана");
         }
     }
-    public static class Mosquito extends Lake {
-        protected boolean biter;
-        private void toKill() {
+    public static class Mosquito extends Lake { //подкласс пруда - комары
+        protected boolean biter; //переменная, определяющая кусачесть комара
+        private void toKill() { //метод, для уничтожения комара
             System.out.println("Комар прихлопнут");
         }
         public void setBiter(boolean biting) {
