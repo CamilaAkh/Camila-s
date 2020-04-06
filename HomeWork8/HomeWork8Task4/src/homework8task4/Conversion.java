@@ -25,7 +25,7 @@ public class Conversion {
             return (this.year);
         }
 
-        public String[] productsList;   //Список товаров
+        public String[] productsList = new String[100];   //Список товаров
         public void addList(String s){     //Метод для заполнения списка
             productsList[productsList.length] = s;
         }
@@ -55,7 +55,7 @@ public class Conversion {
             return (this.year);
         }
 
-        public String[] productsList;
+        public String[] productsList = new String[100];
         public void addList(String s){
             productsList[listNumber] = s;
             listNumber++;
@@ -65,11 +65,10 @@ public class Conversion {
 
     static Act conversion(Contract contr){   //метод для конвертирования договора в акт
         Act newAct= new Act(contr.day,contr.mounth,contr.year);
-/*        for (int i=0; i<contr.productsList.length; i++){
+        for (int i=0; i<contr.productsList.length; i++){
             newAct.productsList[i] = contr.productsList[i];
         }
 
- */
         return newAct;
     }
 
@@ -80,24 +79,15 @@ public class Conversion {
         Contract myContract = new Contract(scn.nextInt(), scn.nextInt(), scn.nextInt());
         System.out.println("Договор создан");
 
-/*        System.out.println("Заполните список товаров, вводите названия по одному, когда товары закончатся, введите end");
-        Scanner in = new Scanner(System.in);
-        String str = in.nextLine();
-        for (int i = 0; i<10; i++){
-            myContract.addList(str);
-            str = in.nextLine();
-        }
+        System.out.println("Заполните список товаров, вводите названия по одному, когда товары закончатся, введите end");
+        String str = scn.nextLine();
 
-        /*while (!(str.equals("end"))){
-            Scanner scan = new Scanner(System.in);
+        while (!(str.equals("end"))){
             myContract.addList(str);
-            str = scan.nextLine();
+            str = scn.nextLine();
         }
-
-         */
 
         Act myAct = conversion(myContract);
-        //System.out.println(str);
         System.out.println("Номер акта: " + myAct.getActNumber());
         System.out.println("Дата акта: " + myAct.getDay() + "." + myAct.getMounth() + "." + myAct.getYear());
     }
