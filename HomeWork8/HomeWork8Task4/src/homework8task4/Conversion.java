@@ -25,7 +25,7 @@ public class Conversion {
             return (this.year);
         }
 
-        public String[] productsList = new String[100];   //Список товаров
+        public String[] productsList = new String[15];   //Список товаров
         public void addList(String s){     //Метод для заполнения списка
             productsList[productsList.length] = s;
         }
@@ -55,7 +55,7 @@ public class Conversion {
             return (this.year);
         }
 
-        public String[] productsList = new String[100];
+        public String[] productsList = new String[15];
         public void addList(String s){
             productsList[listNumber] = s;
             listNumber++;
@@ -64,7 +64,10 @@ public class Conversion {
     }
 
     static Act conversion(Contract contr){   //метод для конвертирования договора в акт
-        Act newAct= new Act(contr.day,contr.mounth,contr.year);
+        Scanner in = new Scanner(System.in);
+        System.out.println("Введите пооочередно день, месяц и год создания акта");
+        Act newAct= new Act(in.nextInt(), in.nextInt(), in.nextInt());
+
         for (int i=0; i<contr.productsList.length; i++){
             newAct.productsList[i] = contr.productsList[i];
         }
@@ -79,7 +82,7 @@ public class Conversion {
         Contract myContract = new Contract(scn.nextInt(), scn.nextInt(), scn.nextInt());
         System.out.println("Договор создан");
 
-        System.out.println("Заполните список товаров, вводите названия по одному, когда товары закончатся, введите end");
+        System.out.println("Заполните список товаров(не более 15), вводите названия по одному, когда товары закончатся, введите end");
         String str = scn.nextLine();
 
         while (!(str.equals("end"))){
@@ -90,6 +93,11 @@ public class Conversion {
         Act myAct = conversion(myContract);
         System.out.println("Номер акта: " + myAct.getActNumber());
         System.out.println("Дата акта: " + myAct.getDay() + "." + myAct.getMounth() + "." + myAct.getYear());
-    }
+        System.out.println("Список товаров акта:");
+        for (String s:myAct.productsList) {
+            if (!(s==null))
+            System.out.println(s);
+        }
+        }
 
 }
