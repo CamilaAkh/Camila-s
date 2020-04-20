@@ -1,6 +1,8 @@
 package homework6;
 
-public class Duck  extends Main.LakeHabitant { //создается класс уток. наследник класса пруда
+public class Duck  extends LakeHabitant { //создается класс уток. наследник класса пруда
+
+    public Duck(){}
 
     void toDetect() {  System.out.println("Обнаружена утка "); }
     protected boolean isItADrake; //переменная, определяющая гендерную принадлежность утки
