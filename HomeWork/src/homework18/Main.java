@@ -24,7 +24,7 @@ public class Main {
             is.read(buf);
             is.close();
 
-            String string = new String(buf);
+            String string = new String(buf,"Windows-1251");
 
             os.write(string.getBytes("ISO-8859-1"));
             os.close();

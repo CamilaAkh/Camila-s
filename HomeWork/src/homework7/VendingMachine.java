@@ -40,8 +40,8 @@ public class VendingMachine {
             }
             return deposit;
         }catch (InputMismatchException e){
-            //System.err.println("Произошла ошибка. Введенные данные имеют тип, несоответствующий требуемому");
-            logger.log(Level.SEVERE, "Произошла ошибка. Введенные данные имеют тип, несоответствующий требуемому");
+            System.err.println("Произошла ошибка. Введенные данные имеют тип, несоответствующий требуемому");
+            logger.log(Level.SEVERE, "Произошла ошибка. Введенные данные имеют тип, несоответствующий требуемому", e);
             return getDeposit();
         }
     }
@@ -63,7 +63,7 @@ public class VendingMachine {
             return number;
         }catch (InputMismatchException e){
             logger.log(Level.SEVERE, "Произошла ошибка. Введенные данные имеют тип, несоответствующий требуемому");
-            //System.err.println("Произошла ошибка. Введенные данные имеют тип, несоответствующий требуемому");
+            System.err.println("Произошла ошибка. Введенные данные имеют тип, несоответствующий требуемому");
             return getDrink();
         }
     }

@@ -6,7 +6,7 @@ import java.nio.file.Path;
 import java.nio.file.SimpleFileVisitor;
 import java.nio.file.attribute.BasicFileAttributes;
 
-public class MyFileVisitor extends SimpleFileVisitor {
+public class MyFileVisitor extends SimpleFileVisitor<Path> {
 
     public FileVisitResult visitFile(Path path, BasicFileAttributes fileAttributes) {
         System.out.println("file name:" + path.getFileName());

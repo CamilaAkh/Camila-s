@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<library>
+    <books>
+        <book>
+            <autor>Уранов</autor>
+            <name>Астрономия</name>
+            <year>1988</year>
+        </book>
+        <book>
+            <autor>Лакомкин</autor>
+            <name>Рецепты</name>
+            <year>2005</year>
+        </book>
+        <book>
+            <autor>Ландау</autor>
+            <name>Физика</name>
+            <year>1980</year>
+        </book>
+        <book>
+            <autor>Копи</autor>
+            <name>Искусство</name>
+            <year>1996</year>
+        </book>
+        <book>
+            <autor>Пушкин</autor>
+            <name>Сказки</name>
+            <year>1833</year>
+        </book>
+    </books>
+</library>

@@ -34,10 +34,15 @@ public class Main {
             System.out.println("renamedFile.txt файл был  успешно удален ");
             }else System.out.println("renamedFile.txt файл удалить не удалось");
 
+            if(copiedFile.delete()){
+                System.out.println("renamedFile.txt файл был  успешно удален ");
+            }else System.out.println("renamedFile.txt файл удалить не удалось");
+
 
             Path pathSource = Paths.get("C:\\Users\\Asus\\Documents\\GitHub\\Camila-s\\HomeWork\\src\\myDir");
+            MyFileVisitor vstr = new MyFileVisitor();
 
-            Files.walkFileTree(pathSource, new MyFileVisitor());
+            Files.walkFileTree(pathSource, vstr);
 
 
             } catch (IOException e) {

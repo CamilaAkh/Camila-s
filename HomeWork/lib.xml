@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schedule>
+    <buses>
+        <bus>
+            <num>102</num>
+            <station>Советская площадь</station>
+            <settlement>Шали</settlement>
+        </bus>
+        <bus>
+            <num>101</num>
+            <station>Советская площадь</station>
+            <settlement>Зеленодольск</settlement>
+        </bus>
+        <bus>
+            <num>304</num>
+            <station>Северный автовокзал</station>
+            <settlement>Пестрецы</settlement>
+        </bus>
+        <bus>
+            <num>220</num>
+            <station>Советская площадь</station>
+            <settlement>Нижнекамск</settlement>
+        </bus>
+    </buses>
+    <trains>
+        <train>
+            <num>6435</num>
+            <stationfrom>Казань 1</stationfrom>
+            <stationto>Зеленодольск</stationto>
+        </train>
+        <train>
+            <num>6214</num>
+            <stationfrom>Казань 2</stationfrom>
+            <stationto>Кукмор</stationto>
+        </train>
+        <train>
+            <num>6118</num>
+            <stationfrom>Казань 1</stationfrom>
+            <stationto>Куркачи</stationto>
+        </train>
+        <train>
+            <num>6220</num>
+            <stationfrom>Казань 2</stationfrom>
+            <stationto>Арск</stationto>
+        </train>
+    </trains>
+    <arrivals>
+        <arrival>
+            <transport>
+                <type>bus</type>
+                <num>304</num>
+                <time>18:00</time>
+            </transport>
+        </arrival>
+        <arrival>
+            <transport>
+                <type>bus</type>
+                <num>220</num>
+                <time>07:15</time>
+            </transport>
+        </arrival>
+        <arrival>
+            <transport>
+                <type>train</type>
+                <num>6220</num>
+                <time>08:55</time>
+            </transport>
+        </arrival>
+    </arrivals>
+</schedule>
