@@ -21,5 +21,15 @@
             <name>Искусство</name>
             <year>1996</year>
         </book>
+        <book>
+            <autor>Пушкин</autor>
+            <name>Сказки</name>
+            <year>1833</year>
+        </book>
+        <book>
+            <autor>Э.А.По</autor>
+            <name>Стихи</name>
+            <year>1845</year>
+        </book>
     </books>
 </library>

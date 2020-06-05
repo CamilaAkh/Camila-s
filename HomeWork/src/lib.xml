@@ -26,5 +26,15 @@
             <name>Сказки</name>
             <year>1833</year>
         </book>
+        <book>
+            <autor>Э.А.По</autor>
+            <name>Стихи</name>
+            <year>1845</year>
+        </book>
+        <book>
+            <autor>Драхт</autor>
+            <name>Письмо_к_королю</name>
+            <year>1962</year>
+        </book>
     </books>
 </library>
