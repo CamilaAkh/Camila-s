@@ -1,4 +1,4 @@
-package library;
+package homework17;
 
 import javax.xml.bind.annotation.XmlElement;
 import java.io.Serializable;

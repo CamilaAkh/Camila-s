@@ -1,4 +1,4 @@
-package library;
+package homework17;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlElementWrapper;
@@ -6,7 +6,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 import java.util.ArrayList;
 import java.util.List;
 
-@XmlRootElement(name = "library")
+@XmlRootElement(name = "homework17")
 public class Library {
 
     protected List<Book> books = new ArrayList<Book>();
